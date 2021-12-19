@@ -15,5 +15,10 @@ namespace courses
             Quantite = quantite;
             Devise = devise;
         }
+
+        public override string ToString()
+        {
+            return base.ToString();
+        }
     }
 }

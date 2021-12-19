@@ -17,38 +17,3 @@ namespace EcoApiEscen {
     }
 }
 
-namespace courses
-{
-    class Program
-    {
-        static void Main(string[] args)
-        {
-            
-            int capacity = 5;
-            var stock = new StockProduit(new List<Produit>(capacity), new List<int>(capacity));
-
-            Gestion gestion = new Gestion(stock);
-            
-            gestion.AddProductInStock(
-                new Produit("XIAOMI","smarthphone",new Price(250.50F,Currency.Euro)),
-                2);
-            gestion.AddProductInStock(
-                new Produit("MACBOOK AIR","ordinateur",new Price(1050.0F,Currency.Euro)),
-                2);
-            
-            
-            Console.WriteLine($"\n List of product");
-            gestion.getAllProduit();
-            
-            Console.WriteLine($"\n Update");
-            gestion.UpdateProduct("XIAOMI",5);
-            
-            gestion.getAllProduit();
-            
-            Console.WriteLine($"\n Delete");
-            gestion.DeleteProduit("XIAOMI");
-            
-            gestion.getAllProduit();
-        }
-    }
-}

@@ -1,3 +1,4 @@
+using courses;
 using EcoApiEscen.Database;
 using EcoApiEscen.Services;
 using Microsoft.AspNetCore.Builder;
@@ -30,6 +31,7 @@ namespace EcoApiEscen {
             services.AddDbContext<EcoDbContext>();
 
             services.AddScoped<IProductService, ProductService>(); // Add the service to DI
+            services.AddScoped<IPrice, PriceService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

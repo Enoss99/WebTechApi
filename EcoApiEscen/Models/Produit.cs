@@ -20,11 +20,5 @@ namespace courses
             Description = description;
             Prix = prix;
         }
-
-        public override string ToString()
-        {
-            return "\n" + "nom : " + Nom + "\n" + "description : " + Description + "\n"
-                   + "prix : " + Prix + Price.Quantity + " " + Price.Currency + "\n";
-        }
     }
 }

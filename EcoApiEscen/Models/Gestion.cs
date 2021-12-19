@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using courses;
 
 namespace micro_systeme
 {
@@ -33,7 +34,7 @@ namespace micro_systeme
             Stock._quantites.Add(quantity);
         }
 
-        public void UpdateProduct(string name,int quantity=1)
+        /*public void UpdateProduct(string name,int quantity=1)
         {
             
             for (int i = 0; i < Stock._produits.Count; i++)
@@ -106,7 +107,7 @@ namespace micro_systeme
             {
                 Console.Write(pannier.Quantite+" - "+pannier.Produit.Name+"\n----------------\n");
             }
-        }
+        } */
         
         
     }

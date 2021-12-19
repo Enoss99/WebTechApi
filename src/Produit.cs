@@ -24,7 +24,7 @@ namespace courses
         public override string ToString()
         {
             return "\n" + "nom : " + Nom + "\n" + "description : " + Description + "\n"
-                   + "prix : " + Prix + "\n";
+                   + "prix : " + Prix + Price.Quantity + " " + Price.Currency + "\n";
         }
     }
 }

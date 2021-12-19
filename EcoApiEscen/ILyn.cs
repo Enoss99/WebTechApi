@@ -2,9 +2,9 @@
 {
     public interface ILyn
     {
-        public GetAllItem()
+        public int GetAllItem()
         {
-            
+            return -1;
         }
     }
 }
